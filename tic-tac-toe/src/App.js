@@ -18,6 +18,7 @@ function App() {
           Learn React
         </a>
       </header>
+      <div id="root"> root </div>
     </div>
   );
 }
