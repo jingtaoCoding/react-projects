@@ -2,15 +2,17 @@
 
 ## Learn TypeScript - Full Tutoral <https://www.youtube.com/watch?v=30LWjhZzg50>
 
-- Type Safety 
-- Static checking 
+- Type Safety
+- Static checking
 - ....10:51
 
 ## React & TypeScript - Course for Beginners <https://www.youtube.com/watch?v=FJDVKeh7RJI>
-- src: https://github.com/piyush-eon/react-typescript-taskify
+
+- src: <https://github.com/piyush-eon/react-typescript-taskify>
 
 - <https://create-react-app.dev/docs/adding-typescript/>
-- 
+-
+
 ```
   - npx create-react-app my-app --template typescript
 ```
@@ -64,9 +66,9 @@ printName("JT")
 
 ```
 
-- font: https://fonts.google.com/specimen/Neucha
--  ES7 extention 
-  - rsc
-  - rcfc ... 
-- react icon: https://react-icons.github.io/react-icons/
-- drag and drop: https://github.com/atlassian/react-beautiful-dnd
+- font: <https://fonts.google.com/specimen/Neucha>
+- ES7 extention
+- rsc
+- rcfc ...
+- react icon: <https://react-icons.github.io/react-icons/>
+- drag and drop: <https://github.com/atlassian/react-beautiful-dnd>
