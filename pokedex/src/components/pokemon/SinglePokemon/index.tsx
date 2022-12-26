@@ -1,21 +1,16 @@
 import React from "react";
 import { useSelector } from "react-redux";
 
-type Pokemon =
-  | {
-      name: string;
-      age: number;
-      id: number;
-      sprites: { back_default?: string };
-    }
-  | {};
+import type { Pokemon } from "../../../store/types"
+import { selectPokemon } from "../../../store/slices/currentPokemon";
+
 interface RootState {
-  pokemon: Pokemon;
+  currentPokemon: Pokemon | {};
 }
 
 const SinglePokemon = () => {
-  const curPokemon: Pokemon = useSelector((state: RootState) => state.pokemon);
-  console.log(curPokemon);
+  const curPokemon: any = useSelector((state: RootState) => state.currentPokemon);
+  console.log("singlePokemon: ", curPokemon);
 
   return "id" in curPokemon ? (
     <div>

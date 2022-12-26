@@ -1,16 +1,11 @@
 import React, { useState } from "react";
 import { pokemonApi } from "../../../api/index";
-import { useDispatch, useSelector } from "react-redux";
-import {
-  selectPokemon,
-  addPokemon,
-} from "../../../store/actions/pokemonActions";
-
+import { useDispatch} from "react-redux";
+import {addPokemon} from "../../../store/slices/pokemons";
+import { selectPokemon } from "../../../store/slices/currentPokemon";
 import "../../styles.css";
 
-
 import { pokemonResponse } from "../../../data/example";
-
 
 const SearchBar: React.FC = () => {
   const [searchText, setSearchText] = useState<string>("");
@@ -19,19 +14,21 @@ const SearchBar: React.FC = () => {
     console.log("--- api call to get a pokemon ---- ");
     try {
       if (searchText) {
-        const url = `/pokemon/${searchText}`;
+        // const url = `/pokemon/${searchText}`;
         // const response = await pokemonApi.get(url);
-        const response = pokemonResponse; // Moke data 
-        // console.log(response.data);
-         dispatch(addPokemon(response.data)); 
-        dispatch(selectPokemon(response.data)); 
+
+        // mocked data
+        const response = pokemonResponse; 
+        
+        const returnPokemon = response.data;
+        dispatch(addPokemon(returnPokemon));
+        dispatch(selectPokemon(returnPokemon));
       }
     } catch (e) {
-      console.log("api err: ", e);
+      alert("No pokemon found!");
+      console.log("api call err: ", e);
     }
   };
-
-  
 
   // useEffect(() => {
   //   fetchPokemon();
@@ -47,7 +44,9 @@ const SearchBar: React.FC = () => {
       />
 
       <button
-        onClick={(e) => {fetchPokemon();}}
+        onClick={(e) => {
+          fetchPokemon();
+        }}
         className="pokemon-search-bar__search-button"
       >
         Search

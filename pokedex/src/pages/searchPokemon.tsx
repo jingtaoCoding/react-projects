@@ -15,11 +15,11 @@ const SearchPokemon = () => {
 
   
   const [pokemon, setPokemon] = useState<string>("pikachu");
-  const url = `/pokemon/${pokemon}`;
+  // const url = `/pokemon/${pokemon}`;
 
   
   const fetchPokemon = async () => {
-    console.log("--- api call to get a pokemon ---- ")
+    // console.log("--- api call to get a pokemon ---- ")
     // try {
     //   const response = await pokemonApi.get(url);
     //   console.log(response.data);
@@ -28,7 +28,7 @@ const SearchPokemon = () => {
     // }
   };
 
-  useEffect(() => {fetchPokemon();}, []);
+  // useEffect(() => {fetchPokemon();}, []);
   // const curPokemon  = useSelector((state: RootState)=> state.pokemon));
   // console.log(pokemon)
 
