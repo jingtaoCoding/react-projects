@@ -1,5 +1,4 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { ActionTypes } from "../constants"
 import type{ Action, Pokemon} from "../types"
 
 const initialState: Pokemon | {} = {}

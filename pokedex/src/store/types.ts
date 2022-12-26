@@ -10,3 +10,9 @@ export type Action = {
   type: string;
   payload: any;
 }
+
+export interface RootState {
+  pokemons: Pokemon[];
+  currentPokemon: Pokemon | {};
+  searchHistory: string[];
+}

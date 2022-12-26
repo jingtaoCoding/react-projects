@@ -6,9 +6,11 @@ import { configureStore } from '@reduxjs/toolkit'
 
 import pokemonsReducer from './slices/pokemons'
 import currentPokemonReducer from './slices/currentPokemon'
+import searchHistoryReducer from './slices/searchHistory'
 const rootReducer = {
   pokemons: pokemonsReducer,
   currentPokemon: currentPokemonReducer,
+  searchHistory: searchHistoryReducer,
 }
 
 export const store = configureStore({
