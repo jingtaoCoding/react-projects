@@ -1,10 +1,11 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import type {RootState } from "../../../store/types";
+import {Link} from "react-router-dom";
+import type { RootState } from "../../../store/types";
 
 import "../../styles.css";
 
-const SinglePokemon: React.FC = () => {
+const CurrentPokemon: React.FC = () => {
   const curPokemon: any = useSelector(
     (state: RootState) => state.currentPokemon
   );
@@ -40,11 +41,13 @@ const SinglePokemon: React.FC = () => {
               <span className="attribute-value">{curPokemon.weight} </span>
             </div>
           </div>
-          <div className="profile-col">More details</div>
+          <div className="profile-col">
+            <Link to={`/details/${curPokemon.id}`}> More details</Link>
+          </div>
         </div>
       </div>
     </div>
   ) : null;
 };
 
-export default SinglePokemon;
+export default CurrentPokemon;

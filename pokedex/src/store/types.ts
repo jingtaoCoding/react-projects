@@ -1,7 +1,9 @@
 export type Pokemon = {
+  id: number;
   name: string;
   age: number;
-  id: number;
+  weight: number;
+  height: number;
   sprites: { back_default?: string };
   abilities: any[];
 }

@@ -49,7 +49,7 @@
   width: 55%;
 }
 
-.profile-col{
+.profile-col {
   padding: 20px 20px;
 
   font-size: 20px;
@@ -83,24 +83,36 @@ ul {
   list-style: none;
   padding-inline-start: 0px;
 }
-.carousel {
-}
-.carousel__col{
+
+.carousel {}
+
+.carousel__col {
   margin: 0 25%;
 }
-.carousel__carousel{
+
+.carousel__carousel {
   /* margin-top: 10px 10px; */
   /* width: 50%; */
 }
-.carousel__carousel--image{
+
+.carousel__carousel--image {
   margin: auto;
   width: 200px;
   height: 200px;
   align-items: center;
   display: flex;
 }
-.carousel__label{
+
+.carousel__label {
   color: grey;
   font-size: 15px;
   margin-bottom: 30px;
+}
+
+
+.pokemon-details__attribute {
+  font-size: 15px;
+  color: red;
+  margin: 50px 50px;
+  border: 2px solid blueviolet;
 }

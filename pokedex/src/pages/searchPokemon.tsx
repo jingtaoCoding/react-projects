@@ -1,5 +1,5 @@
 import React from "react";
-import SinglePokemon from "../components/pokemon/SinglePokemon";
+import SinglePokemon from "../components/pokemon/CurrentPokemon";
 import SearchBar from "../components/pokemon/SearchBar";
 import PokemonCarousel from "../components/pokemon/PokemonCarousel";
 import "./styles.css";

@@ -19,13 +19,13 @@ const SearchBar: React.FC = () => {
   const fetchPokemon = async () => {
     try {
       if (searchText) {
-        // const url = `/pokemon/${searchText}`;
-        // const response = await pokemonApi.get(url);
+        const url = `/pokemon/${searchText}`;
+        const response = await pokemonApi.get(url);
 
         // mocked data
         // const response = mockPokemonResponse; 
         // const response = mockdata[0];
-        const response = mock(); 
+        // const response = mock(); 
         
         const returnPokemon = response.data;
         dispatch(addPokemon(returnPokemon));
