@@ -17,7 +17,7 @@ const CurrentPokemon: React.FC = () => {
         <div className="single-pokemon__profile--image">
           <img
             width="100%"
-            height="250px"
+            height="200px"
             // src={curPokemon.sprites.front_default}
              src={curPokemon.sprites.other.dream_world.front_default}
             alt="na"

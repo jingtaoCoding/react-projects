@@ -1,7 +1,8 @@
 import React from "react";
-import SinglePokemon from "../components/pokemon/CurrentPokemon";
+import CurrentPokemon from "../components/pokemon/CurrentPokemon";
 import SearchBar from "../components/pokemon/SearchBar";
-import PokemonCarousel from "../components/pokemon/PokemonCarousel";
+// import PokemonCarousel from "../components/pokemon/PokemonCarousel";
+import PokemonGrid from "../components/pokemon/PokemonGrid";
 import "./styles.css";
 
 const SearchPokemon: React.FC = () => {
@@ -11,9 +12,12 @@ const SearchPokemon: React.FC = () => {
         <h1>Pokedex</h1>
       </div>
       <SearchBar />
-      <SinglePokemon />
+      <div className="search-result">
+        <CurrentPokemon />
+      </div>
+      
       <hr className="solid"></hr>
-      <PokemonCarousel />
+      <PokemonGrid />
     </div>
   );
 };

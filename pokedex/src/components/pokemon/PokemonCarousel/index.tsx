@@ -4,6 +4,8 @@ import { Carousel } from "react-responsive-carousel";
 import { useSelector } from "react-redux";
 import type { Pokemon, RootState } from "../../../store/types";
 
+import "../../styles.css";
+
 const PokemonCarousel: React.FC = () => {
   const pokemons: Pokemon[] = useSelector((state: RootState) => state.pokemons);
 
