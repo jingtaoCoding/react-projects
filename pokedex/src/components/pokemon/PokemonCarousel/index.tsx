@@ -25,7 +25,8 @@ const PokemonCarousel: React.FC = () => {
                 <img
                   width="250px"
                   height="250px"
-                  src={p.sprites.back_default}
+                  // src={p.sprites.back_default}
+                  src={p.sprites.other.dream_world.front_default}
                   alt="na"
                 />
               </div>

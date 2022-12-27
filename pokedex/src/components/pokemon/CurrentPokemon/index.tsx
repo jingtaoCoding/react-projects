@@ -11,14 +11,15 @@ const CurrentPokemon: React.FC = () => {
   );
   // console.log("singlePokemon: ", curPokemon);
 
-  return "id" in curPokemon ? (
+  return ("id" in curPokemon) ? (
     <div className="single-pokemon">
       <div className="single-pokemon__profile">
         <div className="single-pokemon__profile--image">
           <img
             width="100%"
             height="250px"
-            src={curPokemon.sprites.back_default}
+            // src={curPokemon.sprites.front_default}
+             src={curPokemon.sprites.other.dream_world.front_default}
             alt="na"
           />
         </div>
