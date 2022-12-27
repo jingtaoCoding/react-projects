@@ -58,8 +58,8 @@ const onSearch = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
         className="pokemon-search-bar__input-box"
       ></input>
       <datalist id="history">
-        {searchHistory.map((x) => (
-          <option value={x}></option>
+        {searchHistory.map((x, i) => (
+          <option value={x} key={i}></option>
         ))}
       </datalist>
       <button

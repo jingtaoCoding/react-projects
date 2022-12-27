@@ -19,7 +19,7 @@ const PokemonCarousel: React.FC = () => {
           className="carousel__carousel"
         >
           {pokemons.map((p) => (
-            <div>
+            <div key={p.id}>
               <p className="carousel__label">-- id : {p.id} --</p>
               <div className="carousel__carousel--image">
                 <img
