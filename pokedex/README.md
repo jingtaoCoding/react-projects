@@ -2,7 +2,22 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+This App is created to search for any Pokemon using the Pokemon API (<https://pokeapi.co/docs/v2>). 
+
+## Project Status
+
+### Completed Features
+- [x] Search by Pokemon `id` or `name`
+- [x] Search key history from the drop-down list
+- [x] The search returned Pokemon in a carouse in current session.
+- [x] Link to the Pokemon detail page.   
+
+### Todos
+- [ ] the pokemon details (not complete)
+- [ ] tests 
+
+
+## Build Project
 
 In the project directory, you can run:
 

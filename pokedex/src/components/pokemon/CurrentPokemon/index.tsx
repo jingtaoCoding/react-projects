@@ -9,7 +9,7 @@ const CurrentPokemon: React.FC = () => {
   const curPokemon: any = useSelector(
     (state: RootState) => state.currentPokemon
   );
-  console.log("singlePokemon: ", curPokemon);
+  // console.log("singlePokemon: ", curPokemon);
 
   return "id" in curPokemon ? (
     <div className="single-pokemon">

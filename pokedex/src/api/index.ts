@@ -1,2 +1,2 @@
-export type { ApiService } from './pokemonService';
-export { pokemonApi } from './pokemonService';
+export type { IApiService, IFetchPokemonResponse } from './pokemonService';
+export { pokemonApi, fetchPokemonService } from './pokemonService';
